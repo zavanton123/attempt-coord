@@ -24,18 +24,43 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             app:title="Hello world">
 
-
             <ImageView
                 android:id="@+id/customImageView"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="364dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/more_cat"
                 app:layout_collapseMode="parallax" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/itemOne"
+                    android:text="Some item"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/white_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Tom Yum"
+                    android:textColor="@color/white"
+                    android:textSize="48sp"
+                    android:id="@+id/titleTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/fabOne"
